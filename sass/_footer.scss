@@ -1,0 +1,59 @@
+footer {
+    grid-area: footer;
+    @include flex(flex, space-around, center);
+    background-color: $rojo;
+    text-align: center;
+    color: $negro;
+    padding: 1rem;
+    border-top: solid $negro 5px;
+
+    h3 {
+        color: $negro;
+        padding: 1rem;
+    }
+
+    a {
+        color: $negro;
+        font-weight: 500;
+        transition: all 0.3s linear;
+
+        &:hover {
+            color: $blanco;
+            text-decoration: none;
+        }
+    }
+
+    .footer__contacto {
+
+        div {
+            padding-bottom: 0.5rem;
+        }
+
+        p {
+            display: inline-block;
+            color: $negro;
+        }
+    }
+
+    .footer__redes {
+
+        li {
+            list-style: none;
+            display: inline-block;
+            padding: 0 1rem;
+        }
+    }
+
+    .footer__copyright {
+        font-size: 0.8rem;
+        color: $negro;
+        padding-top: 1rem;
+        margin: 0.6rem;
+    }
+
+    .footer__ayuda a {
+        display: block;
+        padding-bottom: 0.5rem;
+    }
+
+}

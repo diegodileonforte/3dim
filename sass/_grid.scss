@@ -1,0 +1,46 @@
+.index__grid {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "index__titulo index__titulo"
+    "index__deco index__gadgets"
+    "footer footer";
+  grid-template-rows: auto auto 3fr 1fr;
+  grid-template-columns: 50% 50%;
+  grid-row-gap: 1rem;
+}
+
+.nosotros__grid {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "empresa video "
+    "staff video"
+    "footer footer";
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: 50% 50%;
+}
+
+.productos__grid {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "title"
+    "coleccion1"
+    "coleccion2"
+    "coleccion3"
+    "footer";
+  grid-template-rows: repeat(6, auto);
+  grid-template-columns: 100%;
+  grid-row-gap: 1rem;
+}
+
+.contacto__grid {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "formulario ubicacion"
+    "footer footer";
+  grid-template-rows: auto auto 1fr;
+  grid-template-columns: 50% 50%;
+}

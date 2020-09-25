@@ -1,0 +1,46 @@
+.formulario {
+    grid-area: formulario;
+    padding: 2rem;
+    text-align: center;
+    
+
+    .formulario__titulo{
+        font-size: 2rem;
+    }
+
+    .formulario__contenedorGral {
+        margin: 1rem;
+    }
+
+    .formulario__contenedorInd {
+        margin: 1rem;
+    }
+}
+
+.ubicacion {
+    grid-area: ubicacion;
+    padding: 2rem;
+    text-align: center;
+
+    .ubicacion__titulo{
+        font-size: 2rem;
+    }
+
+    iframe {
+        margin: 1rem;
+        box-shadow: 1px 1px 5px $sombra;
+    }
+}
+
+.boton {
+    @extend .boton;
+    color: $rojo;
+    font-weight: 800;
+    font-size: 1rem;
+    border: none;
+
+    &:hover {
+        color: $blanco;
+    }
+}    
+

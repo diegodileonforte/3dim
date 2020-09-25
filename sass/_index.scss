@@ -1,0 +1,58 @@
+.index__titulo {
+    grid-area: index__titulo;
+    color: $negro;
+    letter-spacing: 3px;
+    font-size: 3rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.index__deco {
+    grid-area: index__deco;
+    justify-self: stretch;
+    background-image: url("../images/deco.jpg");
+    background-size: cover;
+    @include flex(flex, center, center);
+    margin: 0.5rem;
+    border-radius: 5px;
+    /* box-shadow: 1px 1px 10px $sombra; */
+    transition: all 0.5s;
+}
+
+.index__gadgets {
+    grid-area: index__gadgets;
+    justify-self: stretch;
+    background-image: url("../images/gadgets.jpg");
+    background-size: cover;
+    @include flex(flex, center, center);
+    margin: 0.5rem;
+    border-radius: 5px;
+    /* box-shadow: 1px 1px 10px $sombra; */
+    transition: all 0.5s;
+}
+
+.index__texto {
+    background-color: $blanco;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px $sombra;
+    transition: all 0.5s;
+
+    a {
+        font-size: 1.5rem;
+        color: $negro;
+        font-weight: 500;
+        transition: all 0.3s linear;
+
+        &:hover {
+            color: $rojo;
+        }
+    }
+
+    p {
+        font-size: 1rem;
+        font-weight: 600;
+        color: $sombra;
+    }
+}

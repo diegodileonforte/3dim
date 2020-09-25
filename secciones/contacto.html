@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="En 3 Dim hacemos realidad tus diseños favoritos gracias a nuestras impresoras 3D de última  generación. Podés elegir un objeto de nuestras colecciones o proponernos tu propio diseño!">
+  <meta name="keywords" content="impresion, impresiones, impresora, 3D, tres, dimensiones, diseño, deco, decoracion, gadgets, pc, computadora, laptop, notebook, dispositivo, celular, movil, mobile, telefono, tablet, tableta, starwars, star, wars, mario, bros, mariobros, pokemon, caba">
+  <title>3 Dim - Impresiones 3D - Contacto</title>
+  <link rel="stylesheet" href="../css/all.min.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;500;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="contacto__grid">
+  <header>
+    <!--Logo-Header-->
+    <div class="logo__contenedor">
+      <a href="../index.html"><img class="header__logo-img" src="../images/logopng.png" alt="logo"></a>
+      <p>3 DIM</p>
+    </div>
+
+    <!--Barra de navegación-->
+    <nav class="header__navbar">
+      <ul>
+        <li><a href="../index.html"><i class="fas fa-cube"></i>INICIO</a></li>
+        <li><a href="nosotros.html"><i class="fas fa-cube"></i>NOSOTROS</a></li>
+        <li><a href="deco.html"><i class="fas fa-cube"></i>DECO</a></li>
+        <li><a href="gadgets.html"><i class="fas fa-cube"></i>GADGETS</a></li>
+        <li><a href="contacto.html"><i class="fas fa-cube"></i>CONTACTO</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--Sección principal-->
+
+  <section class="formulario">
+    <h2 class="formulario__titulo">Hacenos tu pedido o consulta</h2>
+    <div class="formulario__contenedorGral">
+      <form action="contacto.php" method="POST">
+        <div class="formulario__contenedorInd">
+          <label for="first-name">Nombre:</label>
+          <input type="text" name="first-name" id="first-name" required />
+        </div>
+        <div class="formulario__contenedorInd">
+          <label for="surname">Apellido:</label>
+          <input type="text" name="first-name" id="surname" required />
+        </div>
+        <div class="formulario__contenedorInd">
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" placeholder="ejemplo@gmail.com" required />
+        </div>
+        <div>
+          <input type="checkbox" name="accept" value="1" required />
+          <label for="checkbox">Deseo recibir novedades</label>
+        </div class="formulario__contenedorInd">
+        <div class="formulario__contenedorInd">
+          <label for="product-id">ID Producto:</label>
+          <input type="text" name="product-id" id="product-id" placeholder="#ejemplo" />
+        </div>
+        <div>
+          <label for="product-size">Tamaño:</label>
+          <select name="product-size" id="product-size">
+            <option value="small">Chico</option>
+            <option value="medium">Mediano</option>
+            <option value="large">Grande</option>
+          </select>
+        </div>
+        <div class="formulario__contenedorInd">
+          <textarea name="comment" id="comment" cols="50" rows="10" placeholder="Mensaje"></textarea>
+        </div>
+        <div>
+          <input class="boton" type="submit" value="Enviar" />
+        </div>
+      </form>
+    </div>
+  </section>
+  <section class="ubicacion">
+    <h2 class="ubicacion__titulo">Visitanos en nuestro local</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.0432381625565!2d-58.42439758555328!3d-34.57777248046628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59c969fab81%3A0xc637038ecf456a3d!2sJuncal%204444%2C%20C1425BAB%20CABA!5e0!3m2!1ses!2sar!4v1600798671629!5m2!1ses!2sar" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  </section>
+
+  <!--Footer-->
+  <footer>
+    <!--Contacto-Footer-->
+    <div class="footer__contacto">
+      <h3>Contacto y ubicación</h3>
+      <div class="whatsapp-footer">
+        <i class="fab fa-whatsapp"></i>
+        <p>15-4444-4444</p>
+      </div>
+      <div>
+        <i class="far fa-envelope"></i>
+        <a href="mailto:3dimesiones@gmail.com">3dim@gmail.com</a>
+      </div>
+      <div>
+        <i class="fas fa-map-marker-alt"></i>
+        <a href="https://goo.gl/maps/ScJszrBVizEuARNG6" target="/blank">Juncal 4444, C.A.B.A</a>
+      </div>
+    </div>
+    <!--Redes sociales-Footer-->
+    <div class="footer__redes">
+      <h3>Nuestras redes</h3>
+      <ul>
+        <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-2x fa-facebook-square"></i></a>
+        </li>
+        <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-2x fa-instagram-square"></i></a></li>
+        <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-2x fa-twitter-square"></i></a>
+        </li>
+        <li><a href="https://www.youtube.com" target="_blank"><i class="fab fa-2x fa-youtube"></i></a>
+        </li>
+      </ul>
+      <p class="footer__copyright">Copyright © 2020. 3 Dim S.A.</p>
+    </div>
+    <!--Ayuda-Footer-->
+    <div class="footer__ayuda">
+      <h3>Ayuda</h3>
+      <a href="">Términos y condiciones</a>
+      <a href="">Preguntas frecuentes</a>
+      <a href="secciones/contacto.html">Contacto</a>
+    </div>
+
+  </footer>
+</body>
+
+</html>

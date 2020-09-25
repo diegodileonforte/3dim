@@ -1,0 +1,41 @@
+.empresa {
+    padding: 2rem 2rem 0 2rem;
+    grid-area: empresa;
+    text-align: center;
+
+
+    .empresa__titulo {
+        @extend .index__titulo;
+        color: $rojo;
+    }
+
+    .empresa__parrafo {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: $negro;
+    }
+}
+
+.staff {
+    grid-area: staff;
+    padding: 2rem;
+    text-align: center;
+    
+    .staff__titulo {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    .staff__contenido {
+        display: inline-block;
+        box-shadow: 1px 1px 3px #585858;
+        padding: 1rem;
+        margin: 0.5rem;
+    }
+}
+
+.video {
+    grid-area: video;
+    align-self: center;
+    justify-self: center;
+}

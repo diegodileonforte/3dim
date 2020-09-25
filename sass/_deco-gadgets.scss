@@ -1,0 +1,135 @@
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+}
+
+.productos__titulo {
+    grid-area: title;
+    @extend .index__titulo;
+}
+
+.coleccion1 {
+    grid-area: coleccion1;
+    text-align: center;
+    background-color: $negro;
+    padding-bottom: 1rem;
+    border-top: solid $rojo 5px;
+    border-bottom: solid $rojo 5px;
+
+    img {
+        width: 200px;
+        height: auto;
+        padding: 1rem;
+    }
+
+    i {
+        padding: 1rem;
+        color: $rojo;
+    }
+}
+
+.coleccion2 {
+    grid-area: coleccion2;
+    text-align: center;
+    background-color: $negro;
+    padding-bottom: 1rem;
+    border-top: solid $rojo 5px;
+    border-bottom: solid $rojo 5px;
+
+    img {
+        width: 200px;
+        height: auto;
+        padding: 1rem;
+    }
+
+    i {
+        padding: 1rem;
+        color: $rojo;
+    }
+
+}
+
+.coleccion3 {
+    grid-area: coleccion3;
+    text-align: center;
+    background-color: $negro;
+    padding-bottom: 1rem;
+    border-top: solid $rojo 5px;
+    border-bottom: solid $rojo 5px;
+
+    img {
+        width: 200px;
+        height: auto;
+        padding: 1rem;
+    }
+
+    i {
+        padding: 1rem;
+        color: $rojo;
+    }
+}
+
+.coleccion__contenedor {
+    @include flex(flex, space-around, center);
+    flex-wrap: wrap;
+
+    .contenedor-imagen {
+        @include flex(flex, center, center);
+        background-size: cover;
+        width: 250px;
+        height: 250px;
+        border-radius: 5px;
+        transition: all 0.5s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        &:hover .contenedor-texto {
+            opacity: 1;
+        }
+    }
+
+    .contenedor-texto {
+        align-self: flex-end;
+        text-align: center;
+        padding: 0.2rem;
+        margin-bottom: 0.5rem;
+        opacity: 0;
+        background-color: $blanco;
+        border-radius: 5px;
+        color: $rojo;
+        font-size: 1rem;
+        font-weight: 700;
+        padding: 0.2rem;
+        transition: all 0.5s;
+    }
+}
+
+.boton {
+    display: inline-block;
+    background-color: $blanco;
+    padding: 0.3rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    transition: all 0.5s;
+
+    &:hover {
+        background-color: $rojo;
+        transform: scale(1.1);
+    }
+
+    a {
+        color: $rojo;
+        font-weight: 800;
+        font-size: 1rem;
+        transition: color 0.5s;
+
+        &:hover {
+            color: $blanco;
+        }
+    }
+}
