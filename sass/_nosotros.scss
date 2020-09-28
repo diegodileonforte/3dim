@@ -13,6 +13,11 @@
         font-size: 1.5rem;
         font-weight: 600;
         color: $negro;
+
+        @media (max-width: 768px) {
+            font-size: 1rem;
+            padding: 0.5rem;
+        }
     }
 }
 
@@ -20,17 +25,40 @@
     grid-area: staff;
     padding: 2rem;
     text-align: center;
-    
+
+    @media (max-width: 768px) {
+        padding: 1rem 1rem 2rem 1rem;
+        max-width: 100%;
+    }
+
     .staff__titulo {
         font-size: 2rem;
         padding: 1rem;
+
+        @media (max-width: 768px) {
+            font-size: 1.5rem;
+            padding: 1rem;
+        }
     }
 
     .staff__contenido {
         display: inline-block;
-        box-shadow: 1px 1px 3px #585858;
+        box-shadow: 1px 1px 3px $sombra;
         padding: 1rem;
         margin: 0.5rem;
+
+        @media (max-width: 768px) {
+
+            padding: 0.5rem;
+
+            img {
+                height: 130px;
+            }
+
+            h3 {
+                font-size: 1rem;
+            }
+        }
     }
 }
 
@@ -38,4 +66,8 @@
     grid-area: video;
     align-self: center;
     justify-self: center;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
 }

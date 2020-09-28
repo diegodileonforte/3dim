@@ -7,9 +7,19 @@ footer {
     padding: 1rem;
     border-top: solid $negro 5px;
 
+    @media (max-width: 768px) {
+        flex-direction: column;
+        padding: 0.5rem;
+    }
+
     h3 {
         color: $negro;
         padding: 1rem;
+
+        @media (max-width: 768px) {
+            font-size: 1rem;
+            padding: 0.8rem;
+        }
     }
 
     a {
@@ -21,6 +31,11 @@ footer {
             color: $blanco;
             text-decoration: none;
         }
+
+        @media (max-width: 768px) {
+            font-size: 0.8rem;
+        }
+
     }
 
     .footer__contacto {
@@ -32,6 +47,14 @@ footer {
         p {
             display: inline-block;
             color: $negro;
+
+            @media (max-width: 768px) {
+                font-size: 0.8rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            order: 2;
         }
     }
 
@@ -42,6 +65,10 @@ footer {
             display: inline-block;
             padding: 0 1rem;
         }
+
+        @media (max-width: 768px) {
+            order: 1;
+        }
     }
 
     .footer__copyright {
@@ -49,11 +76,23 @@ footer {
         color: $negro;
         padding-top: 1rem;
         margin: 0.6rem;
+
+        @media (max-width: 768px) {
+            font-size: 0.6rem;
+        }
+
     }
 
-    .footer__ayuda a {
-        display: block;
-        padding-bottom: 0.5rem;
+    .footer__ayuda {
+
+        a {
+            display: block;
+            padding-bottom: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            order: 3;
+        }
     }
 
 }

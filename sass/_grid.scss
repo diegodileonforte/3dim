@@ -8,6 +8,17 @@
   grid-template-rows: auto auto 3fr 1fr;
   grid-template-columns: 50% 50%;
   grid-row-gap: 1rem;
+
+  @media (max-width: 768px) {
+    grid-template-areas:
+      "header"
+      "index__titulo"
+      "index__deco"
+      "index__gadgets"
+      "footer";
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: 100%;
+  }
 }
 
 .nosotros__grid {
@@ -19,6 +30,17 @@
     "footer footer";
   grid-template-rows: auto auto auto auto;
   grid-template-columns: 50% 50%;
+
+  @media (max-width: 768px) {
+    grid-template-areas:
+      "header"
+      "empresa"
+      "staff"
+      "video"
+      "footer";
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: 100%;
+  }
 }
 
 .productos__grid {
@@ -43,4 +65,14 @@
     "footer footer";
   grid-template-rows: auto auto 1fr;
   grid-template-columns: 50% 50%;
+
+  @media (max-width: 768px) {
+    grid-template-areas:
+      "header"
+      "formulario"
+      "ubicacion"
+      "footer";
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 100%;
+  }
 }

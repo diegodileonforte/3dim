@@ -5,6 +5,11 @@
     font-size: 3rem;
     padding: 1rem;
     text-align: center;
+
+    @media (max-width: 768px) {
+        font-size: 2rem;
+        padding: 0;
+    }
 }
 
 .index__deco {
@@ -15,8 +20,11 @@
     @include flex(flex, center, center);
     margin: 0.5rem;
     border-radius: 5px;
-    /* box-shadow: 1px 1px 10px $sombra; */
     transition: all 0.5s;
+
+    @media (max-width: 768px) {
+        height: 300px;
+    }
 }
 
 .index__gadgets {
@@ -27,8 +35,11 @@
     @include flex(flex, center, center);
     margin: 0.5rem;
     border-radius: 5px;
-    /* box-shadow: 1px 1px 10px $sombra; */
     transition: all 0.5s;
+
+    @media (max-width: 768px) {
+        height: 300px;
+    }
 }
 
 .index__texto {
@@ -48,11 +59,23 @@
         &:hover {
             color: $rojo;
         }
+
+        @media (max-width: 768px) {
+            font-size: 1rem;
+        }
     }
 
     p {
         font-size: 1rem;
         font-weight: 600;
         color: $sombra;
+
+        @media (max-width: 768px) {
+            font-size: 0.8rem;
+        }
     }
+
+    @media (max-width: 768px){
+        padding: 0.8rem;
+    } 
 }
