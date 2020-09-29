@@ -7,7 +7,7 @@ footer {
     padding: 1rem;
     border-top: solid $negro 5px;
 
-    @media (max-width: 768px) {
+    @media screen and (max-width: 768px) {
         flex-direction: column;
         padding: 0.5rem;
     }
@@ -17,7 +17,7 @@ footer {
         padding: 1rem;
         text-decoration: underline;
 
-        @media (max-width: 768px) {
+        @media screen and (max-width: 768px) {
             padding: 0.8rem;
         }
     }
@@ -42,7 +42,7 @@ footer {
 
         }
 
-        @media (max-width: 768px) {
+        @media screen and (max-width: 768px) {
             order: 2;
         }
     }
@@ -55,7 +55,7 @@ footer {
             padding: 0 1rem;
         }
 
-        @media (max-width: 768px) {
+        @media screen and (max-width: 768px) {
             i {
                 font-size: 40px;
             }
@@ -79,7 +79,7 @@ footer {
             padding-bottom: 0.5rem;
         }
 
-        @media (max-width: 768px) {
+        @media screen and (max-width: 768px) {
             order: 3;
         }
     }

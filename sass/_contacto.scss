@@ -3,7 +3,7 @@
     padding: 2rem;
     text-align: center;
 
-    @media (max-width: 768px) {
+    @media screen and (max-width: 768px) {
         height: 100vh;
 
     }
@@ -21,7 +21,7 @@
     .formulario__contenedorGral {
         margin: 1rem;
 
-        @media (max-width: 768px) {
+        @media screen and (max-width: 768px) {
             margin: 0.5rem;
             @include flex(flex, space-evenly, center);
             flex-direction: column;
@@ -31,7 +31,7 @@
     .formulario__contenedorInd {
         margin: 1rem;
 
-        @media (max-width: 768px) {
+        @media screen and (max-width: 768px) {
             margin: 0.5rem;
         }
     }
@@ -52,7 +52,7 @@
         max-width: 100%;
     }
 
-    @media (max-width: 768px) {
+    @media screen and (max-width: 768px) {
         display: none;
     }
 }

@@ -74,7 +74,12 @@ li {
 
 .coleccion__contenedor {
     @include flex(flex, space-around, center);
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+
+    }
 
     .contenedor-imagen {
         @include flex(flex, center, center);
@@ -86,6 +91,11 @@ li {
 
         &:hover {
             transform: scale(1.1);
+
+            @media screen and (max-width: 768px) {
+                transform: scale(1.3);
+        
+            }
         }
 
         &:hover .contenedor-texto {
@@ -106,6 +116,11 @@ li {
         font-weight: 700;
         padding: 0.2rem;
         transition: all 0.5s;
+
+        @media screen and (max-width: 768px) {
+            opacity: 1;
+    
+        }
     }
 }
 
