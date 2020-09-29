@@ -446,7 +446,6 @@ footer .footer__ayuda a {
   .staff {
     padding: 1rem;
     max-width: 100%;
-    height: 50vh;
   }
 }
 .staff .staff__titulo {
@@ -645,11 +644,6 @@ li {
   grid-area: formulario;
   padding: 2rem;
   text-align: center;
-}
-@media screen and (max-width: 768px) {
-  .formulario {
-    height: 100vh;
-  }
 }
 .formulario #comment {
   max-width: 100%;
