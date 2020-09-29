@@ -16,8 +16,8 @@ header {
         .header__logo-img {
             width: 100px;
             margin: 1rem;
-            
-            @media (max-width: 768px){
+
+            @media (max-width: 768px) {
                 width: 80px;
             }
 
@@ -31,37 +31,111 @@ header {
             font-weight: 800;
             text-align: center;
 
-            @media (max-width: 768px){
+            @media (max-width: 768px) {
                 font-size: 3rem;
             }
         }
 
     }
 
-    .header__navbar li {
-        display: inline-block;
-        margin: 0.8rem;
-        padding: 0.5rem;
+    .open {
+        display: none;
 
-        i {
-            margin-right: 0.5rem;
+        @media (max-width: 768px) {
+            display: block;
+            position: absolute;
+            right: 20px;
+            top: 20px;
         }
 
-        a {
-            display: block;
-            color: $negro;
-            font-weight: 600;
+        img {
+            @media (max-width: 768px) {
+                width: 20px;
+            }
+        }
+    }
+
+
+    #nav {
+
+        .close {
+            display: none;
+
+            @media (max-width: 768px) {
+                display: block;
+                position: absolute;
+                right: 20px;
+                top: 20px;
+            }
+    
+            img {
+                @media (max-width: 768px) {
+                    width: 20px;
+                }
+            }
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        li {
+            padding: 1rem;
             transition: all 0.3s linear;
 
             &:hover {
                 transform: scale(1.1);
-                color: $blanco;
-                text-decoration: none;
             }
         }
 
-        @media (max-width: 768px) {
-            display: none;
+        i {
+            margin-right: 1rem;
         }
+
+        a {
+            text-decoration: none;
+            color: $blanco;
+            font-weight: 600;
+        }
+
+    }
+
+}
+
+@media (max-width: 768px) {
+    header nav {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: $rojo;
+        padding: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: all 0.5s;
+    }
+
+    #nav:target {
+        top: 0;
+        opacity: 1;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    header nav ul li a {
+        font-size: 1.2rem;
     }
 }

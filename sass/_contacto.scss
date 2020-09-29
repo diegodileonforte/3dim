@@ -4,19 +4,18 @@
     text-align: center;
 
     @media (max-width: 768px) {
-        height: 100%;
+        height: 100vh;
+
     }
 
     #comment {
         max-width: 100%;
+        resize: none;
     }
 
-    .formulario__titulo{
+    .formulario__titulo {
         font-size: 2rem;
 
-        @media (max-width: 768px) {
-            font-size: 1.5rem;
-        }
     }
 
     .formulario__contenedorGral {
@@ -24,6 +23,8 @@
 
         @media (max-width: 768px) {
             margin: 0.5rem;
+            @include flex(flex, space-evenly, center);
+            flex-direction: column;
         }
     }
 
@@ -41,7 +42,7 @@
     padding: 2rem;
     text-align: center;
 
-    .ubicacion__titulo{
+    .ubicacion__titulo {
         font-size: 2rem;
     }
 
@@ -66,5 +67,4 @@
     &:hover {
         color: $blanco;
     }
-}    
-
+}
