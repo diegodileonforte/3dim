@@ -41,6 +41,17 @@
     grid-template-rows: auto auto auto auto auto;
     grid-template-columns: 100%;
   }
+
+  @media screen and (min-width: 769px) and (max-width: 1200px) {
+    grid-template-areas:
+      "header"
+      "empresa"
+      "staff"
+      "video"
+      "footer";
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: 100%;
+  }
 }
 
 .productos__grid {

@@ -74,11 +74,17 @@ li {
 
 .coleccion__contenedor {
     @include flex(flex, space-around, center);
-    /* flex-wrap: wrap; */
+
 
     @media screen and (max-width: 768px) {
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
 
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 1200px){
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .contenedor-imagen {
