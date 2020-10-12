@@ -106,6 +106,7 @@ header .logo__contenedor {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  animation-duration: 1.2s;
 }
 header .logo__contenedor .header__logo-img {
   width: 100px;
@@ -144,6 +145,9 @@ header .open {
   header .open img {
     width: 20px;
   }
+}
+header #nav {
+  animation-duration: 1.2s;
 }
 header #nav .close {
   display: none;
@@ -323,6 +327,7 @@ footer .footer__ayuda a {
   font-size: 3rem;
   padding: 1rem;
   text-align: center;
+  animation-duration: 1.2s;
 }
 @media screen and (max-width: 768px) {
   .index__titulo, .productos__titulo, .empresa .empresa__titulo {
@@ -344,6 +349,7 @@ footer .footer__ayuda a {
   margin: 0.5rem;
   border-radius: 5px;
   transition: all 0.5s;
+  animation-duration: 1.2s;
 }
 @media screen and (max-width: 768px) {
   .index__deco {
@@ -366,6 +372,7 @@ footer .footer__ayuda a {
   margin: 0.5rem;
   border-radius: 5px;
   transition: all 0.5s;
+  animation-duration: 1.2s;
 }
 @media screen and (max-width: 768px) {
   .index__gadgets {
@@ -414,6 +421,7 @@ footer .footer__ayuda a {
   padding: 2rem 2rem 0 2rem;
   grid-area: empresa;
   text-align: center;
+  animation-duration: 1.2s;
 }
 @media screen and (max-width: 768px) {
   .empresa {
@@ -452,6 +460,7 @@ footer .footer__ayuda a {
   grid-area: staff;
   padding: 2rem;
   text-align: center;
+  animation-duration: 1.2s;
 }
 @media screen and (max-width: 768px) {
   .staff {
@@ -494,6 +503,7 @@ footer .footer__ayuda a {
   grid-area: video;
   align-self: center;
   justify-self: center;
+  animation-duration: 1.2s;
 }
 @media screen and (max-width: 768px) {
   .video {
@@ -529,6 +539,7 @@ li {
   padding-bottom: 1rem;
   border-top: solid #FE4A49 5px;
   border-bottom: solid #FE4A49 5px;
+  animation-duration: 1.2s;
 }
 .coleccion1 img {
   width: 200px;
@@ -549,6 +560,7 @@ li {
   padding-bottom: 1rem;
   border-top: solid #FE4A49 5px;
   border-bottom: solid #FE4A49 5px;
+  animation-duration: 1.2s;
 }
 .coleccion2 img {
   width: 200px;
@@ -569,6 +581,7 @@ li {
   padding-bottom: 1rem;
   border-top: solid #FE4A49 5px;
   border-bottom: solid #FE4A49 5px;
+  animation-duration: 1.2s;
 }
 .coleccion3 img {
   width: 200px;
@@ -666,6 +679,7 @@ li {
   grid-area: formulario;
   padding: 2rem;
   text-align: center;
+  animation-duration: 1.2s;
 }
 .formulario #comment {
   max-width: 100%;
@@ -701,6 +715,7 @@ li {
   grid-area: ubicacion;
   padding: 2rem;
   text-align: center;
+  animation-duration: 1.2s;
 }
 
 @media screen and (max-width: 768px) {

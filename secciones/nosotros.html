@@ -4,10 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="En 3 Dim hacemos realidad tus diseños favoritos gracias a nuestras impresoras 3D de última  generación. Podés elegir un objeto de nuestras colecciones o proponernos tu propio diseño!">
-  <meta name="keywords" content="impresion, impresiones, impresora, 3D, tres, dimensiones, diseño, deco, decoracion, gadgets, pc, computadora, laptop, notebook, dispositivo, celular, movil, mobile, telefono, tablet, tableta, starwars, star, wars, mario, bros, mariobros, pokemon, caba">
+  <meta name="description"
+    content="En 3 Dim hacemos realidad tus diseños favoritos gracias a nuestras impresoras 3D de última  generación. Podés elegir un objeto de nuestras colecciones o proponernos tu propio diseño!">
+  <meta name="keywords"
+    content="impresion, impresiones, impresora, 3D, tres, dimensiones, diseño, deco, decoracion, gadgets, pc, computadora, laptop, notebook, dispositivo, celular, movil, mobile, telefono, tablet, tableta, starwars, star, wars, mario, bros, mariobros, pokemon, caba">
   <title>3 Dim - Nosotros</title>
   <link rel="stylesheet" href="../css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="stylesheet" href="../css/main.css">
   <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;500;600;800&display=swap" rel="stylesheet">
 </head>
@@ -37,7 +40,7 @@
   </header>
 
   <!--Sección principal-->
-  <section class="empresa">
+  <section class="empresa wow animate__animated animate__fadeInDown">
     <h1 class="empresa__titulo">3 DIM</h1>
     <p class="empresa__parrafo">
       En 3 Dim hacemos realidad tus diseños favoritos gracias a
@@ -46,18 +49,18 @@
       diseño!
     </p>
   </section>
-  <section class="staff">
+  <section class="staff wow animate__animated animate__fadeInUp">
     <h2 class="staff__titulo">Nuestro Staff</h2>
-      <div class="staff__contenido">
-        <img src="../images/matiascarbone.jpg" alt="Matías Carbone" />
-        <h3>Matías Carbone</h3>
-      </div>
-      <div class="staff__contenido">
-        <img src="../images/solaguirre.jpg" alt="Sol Aguirre" />
-        <h3>Sol Aguirre</h3>
-      </div>
+    <div class="staff__contenido">
+      <img src="../images/matiascarbone.jpg" alt="Matías Carbone" />
+      <h3>Matías Carbone</h3>
+    </div>
+    <div class="staff__contenido">
+      <img src="../images/solaguirre.jpg" alt="Sol Aguirre" />
+      <h3>Sol Aguirre</h3>
+    </div>
   </section>
-  <section class="video">
+  <section class="video wow animate__fadeInRight">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/S2cpHMoK8mw?controls=0&amp;start=7"
       frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen></iframe>
@@ -105,6 +108,10 @@
     </div>
 
   </footer>
+  <script src="../js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 </body>
 
 </html>

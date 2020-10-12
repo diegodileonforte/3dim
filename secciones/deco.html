@@ -8,6 +8,7 @@
   <meta name="keywords" content="impresion, impresiones, impresora, 3D, tres, dimensiones, diseño, deco, decoracion, gadgets, pc, computadora, laptop, notebook, dispositivo, celular, movil, mobile, telefono, tablet, tableta, starwars, star, wars, vader, solo, atat, trooper, tie, mario, bros, mariobros, luigi, yoshi, hongo, pokemon, pikachu, charizard, bulbasaur, psyduck, gyarados, caba">
   <title>3 Dim - Deco</title>
   <link rel="stylesheet" href="../css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="stylesheet" href="../css/main.css">
   <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;500;600;800&display=swap" rel="stylesheet">
 </head>
@@ -37,9 +38,9 @@
   </header>
 
   <!--Sección principal-->
-  <h1 class="productos__titulo">DECO</h1>
+  <h1 class="productos__titulo wow animate__animated animate__fadeInDown">DECO</h1>
   <!--Colección Star Wars-Slides-->
-  <section class="coleccion1">
+  <section class="coleccion1 wow animate__animated animate__slideInUp">
     <div class="titulo__contenedor">
       <img src="../images/sw-logo.png" alt="Star Wars">
     </div>
@@ -75,7 +76,7 @@
     </div>
   </section>
   <!--Colección Mario Bross-Slides-->
-  <section class="coleccion2">
+  <section class="coleccion2 wow animate__animated animate__slideInUp">
     <div class="titulo__contenedor">
       <img src="../images/mb-logo.png" alt="Mario Bros">
     </div>
@@ -111,7 +112,7 @@
     </div>
   </section>
   <!--Colección Pokémon-Slides-->
-  <section class="coleccion3">
+  <section class="coleccion3 wow animate__animated animate__slideInUp">
     <div class="titulo__contenedor">
       <img src="../images/pk-logo.png" alt="Pokemon">
     </div>
@@ -188,6 +189,10 @@
     </div>
 
   </footer>
+  <script src="../js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 </body>
 
 </html>

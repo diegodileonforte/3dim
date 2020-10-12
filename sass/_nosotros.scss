@@ -2,6 +2,7 @@
     padding: 2rem 2rem 0 2rem;
     grid-area: empresa;
     text-align: center;
+    animation-duration: 1.2s;
 
     @media screen and (max-width: 768px) {
         @include flex(flex, flex-start, center);
@@ -37,6 +38,7 @@
     grid-area: staff;
     padding: 2rem;
     text-align: center;
+    animation-duration: 1.2s;
 
     @media screen and (max-width: 768px) {
         padding: 1rem;
@@ -79,6 +81,7 @@
     grid-area: video;
     align-self: center;
     justify-self: center;
+    animation-duration: 1.2s;
 
     @media screen and (max-width: 768px) {
         display: none;

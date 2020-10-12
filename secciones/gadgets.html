@@ -5,9 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Los mejores gadgets para tus dispositivos móviles">
-  <meta name="keywords" content="impresion, impresiones, impresora, 3D, tres, dimensiones, diseño, deco, decoracion, gadgets, pc, computadora, laptop, notebook, dispositivo, celular, movil, mobile, telefono, tablet, tableta, starwars, star, wars, mario, bros, mariobros, pokemon, caba">
+  <meta name="keywords"
+    content="impresion, impresiones, impresora, 3D, tres, dimensiones, diseño, deco, decoracion, gadgets, pc, computadora, laptop, notebook, dispositivo, celular, movil, mobile, telefono, tablet, tableta, starwars, star, wars, mario, bros, mariobros, pokemon, caba">
   <title>3 Dim - Gadgets</title>
   <link rel="stylesheet" href="../css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="stylesheet" href="../css/main.css">
   <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;500;600;800&display=swap" rel="stylesheet">
 </head>
@@ -37,9 +39,9 @@
   </header>
 
   <!--Sección principal-->
-  <h1 class="productos__titulo">GADGETS</h1>
+  <h1 class="productos__titulo wow animate__animated animate__fadeInDown">GADGETS</h1>
   <!--Colección Celular-Slides-->
-  <section class="coleccion1">
+  <section class="coleccion1 wow animate__animated animate__slideInUp">
     <i class="fas fa-4x fa-mobile-alt"></i>
     <div class="coleccion__contenedor">
       <div class="cel-1-img contenedor-imagen">
@@ -73,7 +75,7 @@
     </div>
   </section>
   <!--Colección Tablet-Slides-->
-  <section class="coleccion2">
+  <section class="coleccion2 wow animate__animated animate__slideInUp">
     <i class="fas fa-4x fa-tablet-alt"></i>
     <div class="coleccion__contenedor">
       <div class="tab-1-img contenedor-imagen">
@@ -107,7 +109,7 @@
     </div>
   </section>
   <!--Notebook-->
-  <section class="coleccion3">
+  <section class="coleccion3 wow animate__animated animate__slideInUp">
     <i class="fas fa-4x fa-laptop"></i>
     <div class="coleccion__contenedor">
       <div class="pc-1-img contenedor-imagen">
@@ -182,6 +184,10 @@
     </div>
 
   </footer>
+  <script src="../js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 </body>
 
 </html>

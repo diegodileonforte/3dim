@@ -12,6 +12,7 @@ header {
     .logo__contenedor {
 
         @include flex(flex, space-between, center);
+        animation-duration: 1.2s;
 
         .header__logo-img {
             width: 100px;
@@ -58,6 +59,8 @@ header {
 
 
     #nav {
+
+        animation-duration: 1.2s;
 
         .close {
             display: none;
