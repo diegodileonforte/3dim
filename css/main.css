@@ -145,6 +145,22 @@ header .open {
     width: 20px;
   }
 }
+header a:-webkit-any-link {
+  display: none;
+}
+@media (max-width: 768px) {
+  header a:-webkit-any-link {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  header a:-webkit-any-link img {
+    width: 20px;
+  }
+}
 header #nav {
   animation-duration: 1.2s;
 }
@@ -161,6 +177,22 @@ header #nav .close {
 }
 @media screen and (max-width: 768px) {
   header #nav .close img {
+    width: 20px;
+  }
+}
+header #nav a:-webkit-any-link {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  header #nav a:-webkit-any-link {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  header #nav a:-webkit-any-link img {
     width: 20px;
   }
 }
