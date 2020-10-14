@@ -56,46 +56,11 @@ header {
         }
     }
 
-    a:-webkit-any-link{
-        display: none;
-
-        @media (max-width: 768px) {
-            display: block;
-            position: absolute;
-            right: 20px;
-            top: 20px;
-        }
-
-        img {
-            @media screen and (max-width: 768px) {
-                width: 20px;
-            }
-        }
-    }
-
-
     #nav {
 
         animation-duration: 1.2s;
 
         .close {
-            display: none;
-
-            @media screen and (max-width: 768px) {
-                display: block;
-                position: absolute;
-                right: 20px;
-                top: 20px;
-            }
-
-            img {
-                @media screen and (max-width: 768px) {
-                    width: 20px;
-                }
-            }
-        }
-
-        a:-webkit-any-link{
             display: none;
 
             @media screen and (max-width: 768px) {
